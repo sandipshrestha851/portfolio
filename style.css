@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+}
+
+.front-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    width: 50vw;
+    height: 20vw;
+    position: relative;
+    top: 265px;
+    left: 25%;
+    font-family: "Noto Sans", sans-serif;
+    gap: 104px;
+}
+
+.picture {
+    width: 130px;
+    position: relative;
+    top: 24px;
+}
+
+.btn {
+
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: #4444e4;
+    color: #ffffff;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.info p{
+    font-size: 18px;
+}
+
+.btn img {
+    filter: invert(1);
+    width: 20px;
+}
