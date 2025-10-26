@@ -1,33 +1,36 @@
 body {
-    background-color: lightblue;
+    background-color: #0f172a;
+    font-family: "Noto Sans", sans-serif;
+    color: white;
 }
 
 .front-page {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    color: black;
-    width: 50vw;
-    height: 20vw;
+    background-color: #1e293b;
+    color: white;
+    width: 75vw;
+    height: 35vw;
     position: relative;
-    top: 265px;
-    left: 25%;
+    top: 100px;
+    left: 13%;
     font-family: "Noto Sans", sans-serif;
     gap: 104px;
+    border-radius: 12px;
 }
 
 .picture {
-    width: 130px;
+    width: 230px;
     position: relative;
     top: 24px;
 }
 
 .btn {
 
-    padding: 13px;
+    padding: 15px;
     border-radius: 8px;
-    font-size: 17px;
+    font-size: 26px;
     background-color: #4444e4;
     color: #ffffff;
     font-weight: bolder;
@@ -36,13 +39,127 @@ body {
     justify-content: center;
     gap: 4px;
     cursor: pointer;
+    border: none;
 }
 
-.info p{
-    font-size: 18px;
+h1 {
+    font-size: 48px;
+}
+
+.info p {
+    font-size: 30px;
 }
 
 .btn img {
     filter: invert(1);
     width: 20px;
+}
+
+
+.aboutme {
+    margin: 23rem 225px;
+}
+
+.aboutmeContainer{
+    background-color:#1e293b;
+    border-radius: 12px;
+    margin-bottom: 15rem;
+    height: 117vh;
+    width: 75vw;
+}
+
+.aboutme h1 {
+    text-align: center;
+    padding-top: 36px;
+}
+
+.bio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f0dddd; */
+    border-radius: 10px;
+    margin-top: 46px;
+
+}
+
+
+.myinfo {
+    position: relative;
+    top: -70px;
+    left: 145px;
+    margin-top: 87px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.myinfo p {
+    font-size: 25px;
+}
+
+.aboutme img {
+    width: 54%;
+    position: relative;
+    bottom: -7px;
+    left: 88px;
+}
+
+.personalInterest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f0dddd; */
+    border-radius: 10px;
+    padding-bottom: 5%;
+
+}
+
+.personalInterest ul {
+    margin: 0;
+}
+
+.personalInterest ul li {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.skillsContainer {
+    width: 75vw;
+    margin: 0 225px;
+    border-radius: 12px;
+}
+
+.frontEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e293b;
+    margin: 7%;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+
+.skillsimages img {
+    width: 50px;
+    background-color: transparent;
+}
+
+.skillsimages {
+    display: flex;
+    gap: 112px;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e293b;
+    margin: 7%;
+    border-radius: 10px;
+    padding-bottom: 5%;
 }
