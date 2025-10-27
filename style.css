@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
     overscroll-behavior: contain;
 }
@@ -9,7 +9,7 @@ body {
     color: white;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -20,7 +20,7 @@ body {
     z-index: 1000;
 }
 
-.navbar p a{
+.navbar p a {
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -28,20 +28,21 @@ body {
     transition: all 0.5s;
 }
 
-.navbar p{
+.navbar p {
     transition: all 0.5s;
 }
 
-.navbar p a:hover{
+.navbar p a:hover {
     color: rgb(56 189 248);
 }
-.navbar p:hover{
+
+.navbar p:hover {
     transform: scale(1.1);
-    
+
 }
 
-.logo img{
-   width: 121px;
+.logo img {
+    width: 121px;
     position: relative;
     top: 14px;
     filter: invert(1);
@@ -67,7 +68,9 @@ body {
 .picture {
     width: 230px;
     position: relative;
-    top: 24px;
+    top: 9px;
+    border-radius: 128px;
+    border: 16px solid #84a3b9;
 }
 
 .btn {
@@ -301,7 +304,7 @@ h2 {
     border-radius: 12px;
     background-color: #1e293b;
     padding: 15px 22px;
-    padding-bottom: 55px ;
+    padding-bottom: 55px;
 }
 
 .mediaContainer {
@@ -325,7 +328,8 @@ h2 {
     color: rgb(56 189 248);
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
     width: 50%;
     padding: 12px;
     margin: 10px 0;
@@ -334,13 +338,13 @@ input[type="text"], textarea {
     font-size: 18px;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.form .btn{
+.form .btn {
     margin-top: 20px;
 }
