@@ -1,166 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#080B12">
+    <meta name="description" content="Portfolio of Sandip Shrestha, an aspiring MERN stack developer and BCA student seeking a software development internship.">
+    <title>Sandip Shrestha | Aspiring MERN Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
 </head>
-
 <body>
-    <div class="navbar" >
-        <div class="logo">
-            <img src="svgs\my_logo.png" alt="">
-        </div>
-        <p><a href="#home">Home</a></p>
-        <p><a href="#about">About me</a></p>
-        <p><a href="#skills">Skills</a></p>
-        <p><a href="#education">Education</a></p>
-        <p><a href="#projects">Projects</a></p>
-    </div>
-    <div class="page1Container" id="home">
-        <div class="front-page">
-            <div class="info">
-                <h1>Hello I am Sandip Shrestha,</h1>
-                <p>Front End Developer</p>
-                <p>passionate about creating responsive,user-friendly
-                    <br>
-                    websites using HTML, CSS, JavaScript, and React.
-                </p>
-                <Button class="btn" onclick="window.location.href='#contact'">Contact me <img src="svgs\arrow-right.png"
-                        alt=""></Button>
-            </div>
-            <img class="picture" src="svgs\logo2.png" alt="my-photo">
-        </div>
-    </div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
 
-    <div class="aboutme" id="about">
-        <h1>About me</h1>
-        <div class="aboutmeContainer">
-            <div class="bio-container">
-                <div class="myinfo">
-                    <h2>Short Bio</h2>
-                    <p>Hi, I’m Sandip Shrestha, a passionate Front-End Web Developer who loves turning creative ideas
-                        into
-                        <br>
-                        interactive and responsive web experiences.
-                        I focus on writing clean, efficient code and building projects that are not only functional but
-                        also
-                        visually appealing. I’m currently improving my skills in React and modern web technologies to
-                        create
-                        user-friendly interfaces and bring real-world ideas to life on the web.
-                    </p>
-                </div>
-                <img src="svgs\aboutme.png" alt="">
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Sandip Shrestha home">
+                <span class="brand-mark">SS</span>
+                <span>Sandip</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+                <span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="personalInterest">
-                <h2>Personal Interests</h2>
-                <ul>
-                    <li>💻 Learning and experimenting with new web technologies</li>
-                    <li>🎨 UI/UX design and front-end creativity</li>
-                    <li>🎥 Creating YouTube content</li>
-                    <li>🚀 Self-improvement and building digital projects</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="skillsContainer" id="skills">
-        <h1 class="center">Skills</h1>
-        <div class="frontEnd">
-            <h2 class="center">Front-End</h2>
-            <div class="skillsimages">
-                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="">
-                <img src="svgs\css.png" alt="">
-                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="">
-                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="">
-                <img src="https://cdn.simpleicons.org/tailwindcss/38B2A5" alt="">
-            </div>
-        </div>
-
-        <div class="tools">
-            <h2 class="center">Tools</h2>
-            <div class="skillsimages">
-                <img src="https://cdn.simpleicons.org/git/FF6F00" alt="">
-                <img src="svgs\github.png" alt="">
-                <img src="svgs\vscode.png" alt="">
-                <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="exper-educ">
-        <h1 class="center h1-color">Experience & Education</h1>
-        <div class="Container">
-            <div class="education">
-                <h2 class="center" id="education">Education</h2>
-                <ul>
-                    <li>College name - Citizen College</li>
-                    <li>Course - Bachelor's in Computer Application</li>
-                    <li>Start Year : 2024</li>
-                    <li>Focused on learning programming, software development, and web technologies while building
-                        real-world projects to strengthen my technical and creative skills.</li>
-                </ul>
-            </div>
-
-            <div class="projects" id="projects">
-                <h2 class="center">Projects</h2>
-                <div class="projectContainer">
-                    <div class="projectCard">
-                        <h3>Project-1 : Netflix Clone</h3>
-                        <img src="svgs\netflix.png" alt="">
-                        <button onclick="window.location.href='https://github.com/sandipshrestha851/netflix-clone'"
-                            class="btn">View Project</button>
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-grid container">
+                <div class="hero-copy">
+                    <div class="eyebrow reveal">BCA STUDENT · ASPIRING MERN STACK DEVELOPER</div>
+                    <h1 class="reveal">Building thoughtful digital experiences, <span>from frontend to backend.</span></h1>
+                    <p class="hero-text reveal">I’m a BCA student passionate about full-stack web development, focused on building practical applications and strengthening my frontend and backend development skills.</p>
+                    <div class="availability reveal"><span class="status-dot"></span> Open to Software Development Internship Opportunities</div>
+                    <div class="hero-actions reveal">
+                        <a class="button button-primary" href="#projects">Explore My Projects <span aria-hidden="true">↗</span></a>
+                        <a class="button button-secondary" href="sandip-resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a>
+                        <a class="icon-button" href="https://github.com/sandipshrestha851" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.589 2 12.253c0 4.528 2.865 8.369 6.839 9.727.5.096.682-.221.682-.492 0-.243-.009-.887-.014-1.741-2.782.615-3.369-1.368-3.369-1.368-.455-1.178-1.11-1.492-1.11-1.492-.908-.634.068-.621.068-.621 1.003.072 1.531 1.052 1.531 1.052.892 1.56 2.341 1.109 2.91.848.091-.658.349-1.109.635-1.364-2.22-.258-4.555-1.135-4.555-5.052 0-1.116.39-2.027 1.029-2.742-.103-.258-.446-1.303.098-2.715 0 0 .84-.275 2.75 1.047A9.345 9.345 0 0 1 12 6.37c.85.004 1.705.116 2.505.34 1.909-1.322 2.747-1.047 2.747-1.047.546 1.412.204 2.457.1 2.715.64.715 1.028 1.626 1.028 2.742 0 3.927-2.338 4.792-4.566 5.044.359.316.678.941.678 1.897 0 1.37-.012 2.475-.012 2.812 0 .273.18.593.688.492A10.02 10.02 0 0 0 22 12.253C22 6.589 17.523 2 12 2Z"/></svg>
+                        </a>
                     </div>
+                </div>
 
-                    <div class="projectCard">
-                        <h3>Project-2 : Spotify Clone</h3>
-                        <img src="svgs\spotify.png" alt="">
-                        <button onclick="window.location.href='https://github.com/sandipshrestha851/Spotify-Clone'"
-                            class="btn">View Project</button>
+                <div class="hero-visual reveal" aria-label="Developer workspace preview">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="code-window">
+                        <div class="window-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="window-file">app.js</span>
+                            <span class="window-status">●</span>
+                        </div>
+                        <div class="code-body">
+                            <div class="line-numbers" aria-hidden="true">1<br>2<br>3<br>4<br>5<br>6<br>7</div>
+                            <pre><code><span class="code-blue">const</span> developer = {
+  name: <span class="code-cyan">"Sandip"</span>,
+  focus: <span class="code-cyan">"Full Stack"</span>,
+  stack: [<span class="code-cyan">"MERN"</span>],
+  status: <span class="code-cyan">"Learning"</span>,
+  available: <span class="code-purple">true</span>
+};</code></pre>
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <div class="terminal-head"><span>~/sandip</span><span>terminal</span></div>
+                        <p><span>$</span> npm run build</p>
+                        <p class="terminal-success">✓ application ready</p>
+                    </div>
+                    <div class="tech-chip chip-react">React</div>
+                    <div class="tech-chip chip-node">Node</div>
+                    <div class="tech-chip chip-db">MongoDB</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-index">01</span>
+                    <h2>A little about me.</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-panel reveal">
+                        <p class="lead">I’m a BCA student building a practical foundation in full-stack web development.</p>
+                        <p>I enjoy turning ideas into functional applications and am steadily improving across both frontend and backend development. My current interests include backend architecture, REST APIs, databases, authentication, and building maintainable application features.</p>
+                        <p>I’m looking for a software development internship where I can learn from experienced developers, contribute to real projects, and grow through hands-on work.</p>
+                        <a class="text-link" href="#contact">Let’s connect <span>→</span></a>
+                    </div>
+                    <div class="focus-panel reveal">
+                        <span class="panel-label">CURRENT FOCUS</span>
+                        <div class="focus-list">
+                            <div><span>01</span><p>Building full-stack applications</p></div>
+                            <div><span>02</span><p>Learning backend architecture</p></div>
+                            <div><span>03</span><p>Working with APIs and databases</p></div>
+                            <div><span>04</span><p>Writing maintainable React code</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- <div class="certificates">
-                <h2 class="center">Certificates</h2>
-                <ul>
-                    <li>Responsive Web Design – <i>in progress (freeCodeCamp)</i></li>
-                    <li>JavaScript Algorithms and Data Structures – <i>planned</i></li>
-                </ul>
+        <section class="section skills" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-index">02</span>
+                    <h2>Technical skills.</h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-category reveal">
+                        <div class="skill-category-head"><span>01</span><h3>Programming Languages</h3></div>
+                        <div class="skill-tags"><span>JavaScript</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div>
+                    </article>
+                    <article class="skill-category reveal">
+                        <div class="skill-category-head"><span>02</span><h3>Frontend Development</h3></div>
+                        <div class="skill-tags"><span>React.js</span><span>Next.js</span><span>Tailwind CSS</span><span>Vite</span></div>
+                    </article>
+                    <article class="skill-category reveal">
+                        <div class="skill-category-head"><span>03</span><h3>Backend Development</h3></div>
+                        <div class="skill-tags"><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>Flask (basic)</span></div>
+                    </article>
+                    <article class="skill-category reveal">
+                        <div class="skill-category-head"><span>04</span><h3>Databases</h3></div>
+                        <div class="skill-tags"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span></div>
+                    </article>
+                    <article class="skill-category skill-category-wide reveal">
+                        <div class="skill-category-head"><span>05</span><h3>Tools & Concepts</h3></div>
+                        <div class="skill-tags"><span>Git / GitHub</span><span>JWT Authentication</span><span>Express Middleware</span><span>MVC</span><span>CRUD</span><span>Socket.IO</span></div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-        </div> -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-index">03</span>
+                    <h2>Featured projects.</h2>
+                </div>
+                <div class="project-list">
+                    <article class="project-card reveal">
+                        <div class="project-preview preview-rent">
+                            <div class="browser-frame">
+                                <div class="browser-top"><span></span><span></span><span></span><b>RentNest</b></div>
+                                <div class="preview-ui">
+                                    <div class="preview-sidebar"></div>
+                                    <div class="preview-content"><i></i><i></i><i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta"><span>01 / FULL-STACK PLATFORM</span><span class="project-status">Completed</span></div>
+                            <h3>RentNest</h3>
+                            <p class="project-description">A room and hostel rental platform connecting landlords and tenants through role-specific workflows.</p>
+                            <ul class="feature-list">
+                                <li>Admin, landlord, and tenant roles</li>
+                                <li>JWT authentication and role-based access control</li>
+                                <li>Property listings, approval, and booking features</li>
+                            </ul>
+                            <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Socket.IO</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/sandipshrestha851/rental-final-mid-defense-" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-preview preview-shop">
+                            <div class="browser-frame">
+                                <div class="browser-top"><span></span><span></span><span></span><b>Storefront</b></div>
+                                <div class="shop-ui">
+                                    <div class="shop-nav"></div>
+                                    <div class="shop-grid"><i></i><i></i><i></i><i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta"><span>02 / FRONTEND APPLICATION</span><span class="project-status">Completed</span></div>
+                            <h3>E-commerce Platform</h3>
+                            <p class="project-description">A responsive e-commerce frontend with product browsing and shopping interfaces.</p>
+                            <ul class="feature-list">
+                                <li>Reusable React components</li>
+                                <li>Responsive shopping interface</li>
+                                <li>Tailwind CSS-based layout</li>
+                            </ul>
+                            <div class="project-tech"><span>React.js</span><span>JavaScript</span><span>Tailwind CSS</span><span>Vite</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/sandipshrestha851/e-commerce" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-preview preview-service">
+                            <div class="browser-frame">
+                                <div class="browser-top"><span></span><span></span><span></span><b>ServiceHub</b></div>
+                                <div class="service-ui">
+                                    <div class="service-search"></div>
+                                    <div class="service-cards"><i></i><i></i><i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta"><span>03 / PLATFORM IN DEVELOPMENT</span><span class="project-status developing">In Development</span></div>
+                            <h3>ServiceHub</h3>
+                            <p class="project-description">A multi-role platform designed to connect customers with local service providers.</p>
+                            <ul class="feature-list">
+                                <li>Planned location/category-based service search</li>
+                                <li>Provider profiles and service management</li>
+                                <li>Frontend and backend architecture in progress</li>
+                            </ul>
+                            <div class="project-tech"><span>Next.js</span><span>Tailwind CSS</span><span>Node.js</span><span>Express.js</span><span>MySQL</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/sandipshrestha851/ServiceHub" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card-small reveal">
+                        <div class="project-preview preview-todo">
+                            <div class="todo-ui"><div class="todo-head"></div><i></i><i></i><i></i></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta"><span>04 / PRACTICE APPLICATION</span><span class="project-status">Completed</span></div>
+                            <h3>Todo Application</h3>
+                            <p class="project-description">A task management application built to practice component-based architecture and React state management.</p>
+                            <div class="project-tech"><span>React.js</span><span>JavaScript</span><span>CSS</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/sandipshrestha851/todo-list" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section education" id="education">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-index">04</span>
+                    <h2>Education.</h2>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-date"><span>2025</span><i></i><span>Present</span></div>
+                    <div class="education-details">
+                        <span class="panel-label">BACHELOR’S DEGREE</span>
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <p>Citizen College, Pokhara University</p>
+                    </div>
+                    <div class="education-symbol" aria-hidden="true">BCA</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section availability-section">
+            <div class="container">
+                <div class="availability-card reveal">
+                    <div>
+                        <span class="panel-label">INTERNSHIP AVAILABILITY</span>
+                        <h2>Ready to learn, build, and contribute.</h2>
+                        <p>I’m actively looking for a software development internship where I can apply my current knowledge, work with experienced developers, and gain hands-on experience building real-world applications.</p>
+                    </div>
+                    <a class="button button-primary" href="#contact">Let’s Connect <span>↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-copy reveal">
+                        <span class="panel-label">GET IN TOUCH</span>
+                        <h2>Have an opportunity or an interesting project?</h2>
+                        <p>Feel free to reach out for internship opportunities, project discussions, or to connect.</p>
+                        <div class="contact-links">
+                            <a href="mailto:sandipshrestha4455@gmail.com"><span>Email</span><b>sandipshrestha4455@gmail.com</b><i>↗</i></a>
+                            <a href="https://github.com/sandipshrestha851" target="_blank" rel="noopener noreferrer"><span>GitHub</span><b>sandipshrestha851</b><i>↗</i></a>
+                            <a href="https://www.linkedin.com/in/sandip-shrestha-03a180350/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><b>Sandip Shrestha</b><i>↗</i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form reveal" id="contactForm">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button class="button button-primary" type="submit">Send Message <span>↗</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="brand" href="#home"><span class="brand-mark">SS</span><span>Sandip Shrestha</span></a>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>© <span id="year"></span> Sandip Shrestha</p>
+            <p class="footer-code"><span>$</span> build. learn. improve.</p>
         </div>
+    </footer>
 
-        <div class="contactsection" id="contact">
-            <h1 class="h1-color center">Contact me</h1>
-            <div class="form">
-                <input type="text" placeholder="Your Name">
-                <textarea placeholder="Your message here..."></textarea>
-                <button class="btn">Submit</button>
-            </div>
-            <div class="mediaContainer">
-                <a href="https://www.facebook.com/sandip.shrestha.923206"><img src="svgs\fb.svg" alt="facebook"></a>
-                <a href="https://github.com/sandipshrestha851"><img src="svgs\github.svg" alt="twitter"></a>
-                <a href="https://www.linkedin.com/in/sandip-shrestha-03a180350/"><img src="svgs\linkedin.svg"
-                        alt="linkedin"></a>
-                <a href="https://www.instagram.com/sandip_stha5/"><img src="svgs\instagram.svg" alt="instagram"></a>
-            </div>
-        </div>
-
-        <footer>
-            <p class="center">© 2025 Sandip Shrestha. All rights reserved.</p>
-            <p class="center">Made by Sandip Shrestha</p>
-        </footer>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
