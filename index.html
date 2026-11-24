@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#080B12">
-    <meta name="description" content="Portfolio of Sandip Shrestha, an aspiring MERN stack developer and BCA student seeking a software development internship.">
+    <meta name="description"
+        content="Portfolio of Sandip Shrestha, an aspiring MERN stack developer and BCA student seeking a software development internship.">
     <title>Sandip Shrestha — Aspiring MERN Stack Developer</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="shortcut icon" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <canvas id="particleCanvas" aria-hidden="true"></canvas>
     <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -24,7 +29,8 @@
                 <span class="brand-mark">SS</span>
                 <span>Sandip</span>
             </a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navLinks"
+                aria-label="Toggle navigation">
                 <span></span><span></span>
             </button>
             <div class="nav-links" id="navLinks">
@@ -43,14 +49,24 @@
             <div class="hero-grid container">
                 <div class="hero-copy">
                     <div class="eyebrow reveal">BCA STUDENT · ASPIRING MERN STACK DEVELOPER</div>
-                    <h1 class="reveal">Building thoughtful digital experiences, <span>from frontend to backend.</span></h1>
-                    <p class="hero-text reveal">I’m a BCA student passionate about full-stack web development, focused on building practical applications and strengthening my frontend and backend development skills.</p>
-                    <div class="availability reveal"><span class="status-dot"></span> Open to Software Development Internship Opportunities</div>
+                    <h1 class="reveal">Building thoughtful digital experiences, <span>from frontend to backend.</span>
+                    </h1>
+                    <p class="hero-text reveal">I’m a BCA student passionate about full-stack web development, focused
+                        on building practical applications and strengthening my frontend and backend development skills.
+                    </p>
+                    <div class="availability reveal"><span class="status-dot"></span> Open to Software Development
+                        Internship Opportunities</div>
                     <div class="hero-actions reveal">
-                        <a class="button button-primary" href="#projects">Explore My Projects <span aria-hidden="true">↗</span></a>
-                        <a class="button button-secondary" href="sandip-resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a>
-                        <a class="icon-button" href="https://github.com/sandipshrestha851" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.589 2 12.253c0 4.528 2.865 8.369 6.839 9.727.5.096.682-.221.682-.492 0-.243-.009-.887-.014-1.741-2.782.615-3.369-1.368-3.369-1.368-.455-1.178-1.11-1.492-1.11-1.492-.908-.634.068-.621.068-.621 1.003.072 1.531 1.052 1.531 1.052.892 1.56 2.341 1.109 2.91.848.091-.658.349-1.109.635-1.364-2.22-.258-4.555-1.135-4.555-5.052 0-1.116.39-2.027 1.029-2.742-.103-.258-.446-1.303.098-2.715 0 0 .84-.275 2.75 1.047A9.345 9.345 0 0 1 12 6.37c.85.004 1.705.116 2.505.34 1.909-1.322 2.747-1.047 2.747-1.047.546 1.412.204 2.457.1 2.715.64.715 1.028 1.626 1.028 2.742 0 3.927-2.338 4.792-4.566 5.044.359.316.678.941.678 1.897 0 1.37-.012 2.475-.012 2.812 0 .273.18.593.688.492A10.02 10.02 0 0 0 22 12.253C22 6.589 17.523 2 12 2Z"/></svg>
+                        <a class="button button-primary" href="#projects">Explore My Projects <span
+                                aria-hidden="true">↗</span></a>
+                        <a class="button button-secondary" href="sandip-resume.pdf" download>Download Resume <span
+                                aria-hidden="true">↓</span></a>
+                        <a class="icon-button" href="https://github.com/sandipshrestha851" target="_blank"
+                            rel="noopener noreferrer" aria-label="GitHub profile">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 2C6.477 2 2 6.589 2 12.253c0 4.528 2.865 8.369 6.839 9.727.5.096.682-.221.682-.492 0-.243-.009-.887-.014-1.741-2.782.615-3.369-1.368-3.369-1.368-.455-1.178-1.11-1.492-1.11-1.492-.908-.634.068-.621.068-.621 1.003.072 1.531 1.052 1.531 1.052.892 1.56 2.341 1.109 2.91.848.091-.658.349-1.109.635-1.364-2.22-.258-4.555-1.135-4.555-5.052 0-1.116.39-2.027 1.029-2.742-.103-.258-.446-1.303.098-2.715 0 0 .84-.275 2.75 1.047A9.345 9.345 0 0 1 12 6.37c.85.004 1.705.116 2.505.34 1.909-1.322 2.747-1.047 2.747-1.047.546 1.412.204 2.457.1 2.715.64.715 1.028 1.626 1.028 2.742 0 3.927-2.338 4.792-4.566 5.044.359.316.678.941.678 1.897 0 1.37-.012 2.475-.012 2.812 0 .273.18.593.688.492A10.02 10.02 0 0 0 22 12.253C22 6.589 17.523 2 12 2Z" />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -95,18 +111,30 @@
                 </div>
                 <div class="about-grid">
                     <div class="about-panel reveal">
-                        <p class="lead">I’m a BCA student building a practical foundation in full-stack web development.</p>
-                        <p>I enjoy turning ideas into functional applications and am steadily improving across both frontend and backend development. My current interests include backend architecture, REST APIs, databases, authentication, and building maintainable application features.</p>
-                        <p>I’m looking for a software development internship where I can learn from experienced developers, contribute to real projects, and grow through hands-on work.</p>
+                        <p class="lead">I’m a BCA student building a practical foundation in full-stack web development.
+                        </p>
+                        <p>I enjoy turning ideas into functional applications and am steadily improving across both
+                            frontend and backend development. My current interests include backend architecture, REST
+                            APIs, databases, authentication, and building maintainable application features.</p>
+                        <p>I’m looking for a software development internship where I can learn from experienced
+                            developers, contribute to real projects, and grow through hands-on work.</p>
                         <a class="text-link" href="#contact">Let’s connect <span>→</span></a>
                     </div>
                     <div class="focus-panel reveal">
                         <span class="panel-label">CURRENT FOCUS</span>
                         <div class="focus-list">
-                            <div><span>01</span><p>Building full-stack applications</p></div>
-                            <div><span>02</span><p>Learning backend architecture</p></div>
-                            <div><span>03</span><p>Working with APIs and databases</p></div>
-                            <div><span>04</span><p>Writing maintainable React code</p></div>
+                            <div><span>01</span>
+                                <p>Building full-stack applications</p>
+                            </div>
+                            <div><span>02</span>
+                                <p>Learning backend architecture</p>
+                            </div>
+                            <div><span>03</span>
+                                <p>Working with APIs and databases</p>
+                            </div>
+                            <div><span>04</span>
+                                <p>Writing maintainable React code</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,24 +149,38 @@
                 </div>
                 <div class="skills-grid">
                     <article class="skill-category reveal">
-                        <div class="skill-category-head"><span>01</span><h3>Programming Languages</h3></div>
-                        <div class="skill-tags"><span>JavaScript</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div>
+                        <div class="skill-category-head"><span>01</span>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>JavaScript</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div>
                     </article>
                     <article class="skill-category reveal">
-                        <div class="skill-category-head"><span>02</span><h3>Frontend Development</h3></div>
-                        <div class="skill-tags"><span>React.js</span><span>Next.js</span><span>Tailwind CSS</span><span>Vite</span></div>
+                        <div class="skill-category-head"><span>02</span>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skill-tags"><span>React.js</span><span>Next.js</span><span>Tailwind
+                                CSS</span><span>Vite</span></div>
                     </article>
                     <article class="skill-category reveal">
-                        <div class="skill-category-head"><span>03</span><h3>Backend Development</h3></div>
-                        <div class="skill-tags"><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>Flask (basic)</span></div>
+                        <div class="skill-category-head"><span>03</span>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skill-tags"><span>Node.js</span><span>Express.js</span><span>REST
+                                APIs</span><span>Flask (basic)</span></div>
                     </article>
                     <article class="skill-category reveal">
-                        <div class="skill-category-head"><span>04</span><h3>Databases</h3></div>
+                        <div class="skill-category-head"><span>04</span>
+                            <h3>Databases</h3>
+                        </div>
                         <div class="skill-tags"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span></div>
                     </article>
                     <article class="skill-category skill-category-wide reveal">
-                        <div class="skill-category-head"><span>05</span><h3>Tools & Concepts</h3></div>
-                        <div class="skill-tags"><span>Git / GitHub</span><span>JWT Authentication</span><span>Express Middleware</span><span>MVC</span><span>CRUD</span><span>Socket.IO</span></div>
+                        <div class="skill-category-head"><span>05</span>
+                            <h3>Tools & Concepts</h3>
+                        </div>
+                        <div class="skill-tags"><span>Git / GitHub</span><span>JWT Authentication</span><span>Express
+                                Middleware</span><span>MVC</span><span>CRUD</span><span>Socket.IO</span></div>
                     </article>
                 </div>
             </div>
@@ -153,93 +195,91 @@
                 <div class="project-list">
                     <article class="project-card reveal">
                         <div class="project-preview preview-rent">
-                            <div class="browser-frame">
-                                <div class="browser-top"><span></span><span></span><span></span><b>RentNest</b></div>
-                                <div class="preview-ui">
-                                    <div class="preview-sidebar"></div>
-                                    <div class="preview-content"><i></i><i></i><i></i></div>
-                                </div>
-                            </div>
+                            <img src="images/rent_nest.png" alt="RentNest rental platform homepage">
                         </div>
                         <div class="project-info">
-                            <div class="project-meta"><span>01 / FULL-STACK PLATFORM</span><span class="project-status">Completed</span></div>
+                            <div class="project-meta"><span>01 / FULL-STACK PLATFORM</span><span
+                                    class="project-status">Completed</span></div>
                             <h3>RentNest</h3>
-                            <p class="project-description">A room and hostel rental platform connecting landlords and tenants through role-specific workflows.</p>
+                            <p class="project-description">A room and hostel rental platform connecting landlords and
+                                tenants through role-specific workflows.</p>
                             <ul class="feature-list">
                                 <li>Admin, landlord, and tenant roles</li>
                                 <li>JWT authentication and role-based access control</li>
                                 <li>Property listings, approval, and booking features</li>
                             </ul>
-                            <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Socket.IO</span></div>
+                            <div class="project-tech">
+                                <span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Socket.IO</span>
+                            </div>
                             <div class="project-links">
-                                <a href="https://github.com/sandipshrestha851/rental-final-mid-defense-" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                                <a href="https://github.com/sandipshrestha851/rental-final-mid-defense-" target="_blank"
+                                    rel="noopener noreferrer">GitHub <span>↗</span></a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card reveal">
                         <div class="project-preview preview-shop">
-                            <div class="browser-frame">
-                                <div class="browser-top"><span></span><span></span><span></span><b>Storefront</b></div>
-                                <div class="shop-ui">
-                                    <div class="shop-nav"></div>
-                                    <div class="shop-grid"><i></i><i></i><i></i><i></i></div>
-                                </div>
-                            </div>
+                            <img src="images/ecommerce.png" alt="E-commerce storefront category page">
                         </div>
                         <div class="project-info">
-                            <div class="project-meta"><span>02 / FRONTEND APPLICATION</span><span class="project-status">Completed</span></div>
+                            <div class="project-meta"><span>02 / FRONTEND APPLICATION</span><span
+                                    class="project-status">Completed</span></div>
                             <h3>E-commerce Platform</h3>
-                            <p class="project-description">A responsive e-commerce frontend with product browsing and shopping interfaces.</p>
+                            <p class="project-description">A responsive e-commerce frontend with product browsing and
+                                shopping interfaces.</p>
                             <ul class="feature-list">
                                 <li>Reusable React components</li>
                                 <li>Responsive shopping interface</li>
                                 <li>Tailwind CSS-based layout</li>
                             </ul>
-                            <div class="project-tech"><span>React.js</span><span>JavaScript</span><span>Tailwind CSS</span><span>Vite</span></div>
+                            <div class="project-tech"><span>React.js</span><span>JavaScript</span><span>Tailwind
+                                    CSS</span><span>Vite</span></div>
                             <div class="project-links">
-                                <a href="https://github.com/sandipshrestha851/e-commerce" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                                <a href="https://github.com/sandipshrestha851/e-commerce" target="_blank"
+                                    rel="noopener noreferrer">GitHub <span>↗</span></a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card reveal">
                         <div class="project-preview preview-service">
-                            <div class="browser-frame">
-                                <div class="browser-top"><span></span><span></span><span></span><b>ServiceHub</b></div>
-                                <div class="service-ui">
-                                    <div class="service-search"></div>
-                                    <div class="service-cards"><i></i><i></i><i></i></div>
-                                </div>
-                            </div>
+                            <img src="images/service_hub.png" alt="ServiceHub local services marketplace homepage">
                         </div>
                         <div class="project-info">
-                            <div class="project-meta"><span>03 / PLATFORM IN DEVELOPMENT</span><span class="project-status developing">In Development</span></div>
+                            <div class="project-meta"><span>03 / PLATFORM IN DEVELOPMENT</span><span
+                                    class="project-status developing">In Development</span></div>
                             <h3>ServiceHub</h3>
-                            <p class="project-description">A multi-role platform designed to connect customers with local service providers.</p>
+                            <p class="project-description">A multi-role platform designed to connect customers with
+                                local service providers.</p>
                             <ul class="feature-list">
                                 <li>Planned location/category-based service search</li>
                                 <li>Provider profiles and service management</li>
                                 <li>Frontend and backend architecture in progress</li>
                             </ul>
-                            <div class="project-tech"><span>Next.js</span><span>Tailwind CSS</span><span>Node.js</span><span>Express.js</span><span>MySQL</span></div>
+                            <div class="project-tech"><span>Next.js</span><span>Tailwind
+                                    CSS</span><span>Node.js</span><span>Express.js</span><span>MySQL</span></div>
                             <div class="project-links">
-                                <a href="https://github.com/sandipshrestha851/ServiceHub" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                                <a href="https://github.com/sandipshrestha851/ServiceHub" target="_blank"
+                                    rel="noopener noreferrer">GitHub <span>↗</span></a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card project-card-small reveal">
                         <div class="project-preview preview-todo">
-                            <div class="todo-ui"><div class="todo-head"></div><i></i><i></i><i></i></div>
+                            <img src="images/todo_list.png" alt="Todo application task management inbox">
                         </div>
                         <div class="project-info">
-                            <div class="project-meta"><span>04 / PRACTICE APPLICATION</span><span class="project-status">Completed</span></div>
+                            <div class="project-meta"><span>04 / PRACTICE APPLICATION</span><span
+                                    class="project-status">Completed</span></div>
                             <h3>Todo Application</h3>
-                            <p class="project-description">A task management application built to practice component-based architecture and React state management.</p>
+                            <p class="project-description">A task management application built to practice
+                                component-based architecture and React state management.</p>
                             <div class="project-tech"><span>React.js</span><span>JavaScript</span><span>CSS</span></div>
                             <div class="project-links">
-                                <a href="https://github.com/sandipshrestha851/todo-list" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                                <a href="https://github.com/sandipshrestha851/todo-list" target="_blank"
+                                    rel="noopener noreferrer">GitHub <span>↗</span></a>
                             </div>
                         </div>
                     </article>
@@ -271,7 +311,9 @@
                     <div>
                         <span class="panel-label">INTERNSHIP AVAILABILITY</span>
                         <h2>Ready to learn, build, and contribute.</h2>
-                        <p>I’m actively looking for a software development internship where I can apply my current knowledge, work with experienced developers, and gain hands-on experience building real-world applications.</p>
+                        <p>I’m actively looking for a software development internship where I can apply my current
+                            knowledge, work with experienced developers, and gain hands-on experience building
+                            real-world applications.</p>
                     </div>
                     <a class="button button-primary" href="#contact">Let’s Connect <span>↗</span></a>
                 </div>
@@ -286,9 +328,12 @@
                         <h2>Have an opportunity or an interesting project?</h2>
                         <p>Feel free to reach out for internship opportunities, project discussions, or to connect.</p>
                         <div class="contact-links">
-                            <a href="mailto:sandipshrestha4455@gmail.com"><span>Email</span><b>sandipshrestha4455@gmail.com</b><i>↗</i></a>
-                            <a href="https://github.com/sandipshrestha851" target="_blank" rel="noopener noreferrer"><span>GitHub</span><b>sandipshrestha851</b><i>↗</i></a>
-                            <a href="https://www.linkedin.com/in/sandip-shrestha-03a180350/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><b>Sandip Shrestha</b><i>↗</i></a>
+                            <a
+                                href="mailto:sandipshrestha4455@gmail.com"><span>Email</span><b>sandipshrestha4455@gmail.com</b><i>↗</i></a>
+                            <a href="https://github.com/sandipshrestha851" target="_blank"
+                                rel="noopener noreferrer"><span>GitHub</span><b>sandipshrestha851</b><i>↗</i></a>
+                            <a href="https://www.linkedin.com/in/sandip-shrestha-03a180350/" target="_blank"
+                                rel="noopener noreferrer"><span>LinkedIn</span><b>Sandip Shrestha</b><i>↗</i></a>
                         </div>
                     </div>
                     <form class="contact-form reveal" id="contactForm">
@@ -320,4 +365,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
